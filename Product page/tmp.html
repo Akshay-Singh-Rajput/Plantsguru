@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+
+        /* style for search-bar */
+
+
+        #container{
+            display: flex;
+            width: 70%;
+            height: 40px;
+            margin-top: 20px;
+            margin:auto;
+            justify-content: space-between;
+        }
+        #div2>input{
+            width: 600px;
+            height: 80%;
+            background-color: white;
+            border: 0.5px solid rgb(235,235,237);
+            margin-top: 2px;
+
+        }
+        #div3>input{
+            width: 150px;
+            height: 80%;
+            border: 0.5px solid rgb(235,235,237);
+            margin-top: 2px;
+        }
+
+        /* style for nav-bar */
+
+        #nav{
+            width: 100%;
+            height: 40px;
+            background-color: rgb(46,185,144);
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+        #nav>select{
+            background-color: rgb(46,185,144);
+            color: white;
+            border: 0px solid rgb(46,185,144);
+            font-weight: bolder;
+        }
+        select > option{
+            background-color: silver;
+            padding: 30PX;
+        }
+       
+    </style>
+</head>
+<body>
+
+    <!-- code for search-bar -->
+
+
+    <div id="container">
+        <div id="div1">
+            <img src="https://www.plantsguru.com/image/cache/pg-new-187x36.png" alt="logo">
+        </div>
+        <div id="div2">
+            <input type="text" placeholder="search" >
+        </div>
+        <div id="div3">
+            <input type="text" placeholder="0">
+        </div>
+    </div>
+
+    <!-- code for nav-bar -->
+
+    <div id="nav">
+        <select><option>PLANTS</option>
+            <option>FLOWERING PLANTS</option>
+            <option>GIFT PLANTS</option>
+            <option>PLANTS BY FEATURE</option>
+            <option>PLANTS BY LOCATION</option>
+            <option>TOP PLANTS</option>
+            <option>PLANTS BY TYPE</option>
+            <option>FOLIAGE PLANTS</option>
+            <option>FLOWERS BY SEASON</option> 
+        
+        </select>
+        <select>
+                <option >
+                    SEEDS & BULBS
+                </option> 
+            <option >
+                VEGETABLE SEEDS
+            </option>
+            <option >
+               FLOWER BULBS
+            </option>
+            <option >
+               FLOWER SEEDS
+            </option>
+            <option >
+               FORESTY SEEDS
+            </option>
+        </select>
+        <select><option>POTS & PLANTERS</option>
+            <option></option>
+            <option></option>
+            <option></option>
+            <option></option>
+            <option></option>
+        </select>
+        <select><option>GARDEN DECOR</option>
+            <option></option>
+            <option></option>
+            <option></option>
+            <option></option>
+            <option></option>
+        </select>
+        <select><option>FERTILIZERS</option>
+            <option></option>
+            <option></option>
+            <option></option>
+            <option></option>
+            <option></option>
+        </select>
+        <select><option>SALE</option>
+            <option></option>
+            <option></option>
+            <option></option>
+            <option></option>
+            <option></option>
+        </select>
+        <select><option>MY ACCOUNT</option>
+            <option></option>
+            <option></option>
+            <option></option>
+            <option></option>
+            <option></option>
+        </select>
+    </div>
+    
+</body>
+</html>
+
