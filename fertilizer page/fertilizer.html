@@ -6,69 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        * {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        
-        #heading {
-            width: 69%;
-            margin: auto;
-            background-color: #5a6981;
-            color: #ffffff;
-            padding: 10px 0 10px 15px;
-            font-size: 18px;
-        }
-        
-        img {
-            width: 100%;
-        }
-        
-        #container {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-gap: 10px;
-            width: 70%;
-            margin: 20px auto;
-            /* border: 1px solid red; */
-        }
-        
-        #container>div {
-            border: 2px solid rgb(231, 228, 228);
-            text-align: center;
-        }
-        
-        #container>div:hover {
-            border: 2px solid grey;
-        }
-        
-        #name {
-            height: 80px;
-            /* border: 1px solid red; */
-        }
-        
-        #name+p {
-            /* border: 1px solid red; */
-            font-weight: bold;
-        }
-        
-        #name:hover {
-            color: rgb(7, 206, 206);
-        }
-        
-        button {
-            color: black;
-            padding: 4%;
-            border: 1px solid rgb(228, 218, 218);
-            background-color: white;
-            margin-bottom: 5%;
-            cursor: pointer;
-        }
-        
-        button:hover {
-            color: rgb(22, 206, 206);
-        }
-    </style>
+    <link rel="stylesheet" href="fertilizer.css">
+
 </head>
 
 <body>
@@ -81,28 +20,4 @@
 
 </html>
 <script src="../data page/data.js"></script>
-<script>
-    var fertilizeritem = JSON.parse(localStorage.getItem("fertilizerData"));
-    fertilizeritem.map(function(elem) {
-
-        var div = document.createElement("div");
-
-
-        var img = document.createElement("img");
-        img.setAttribute("src", elem.image);
-
-        var p1 = document.createElement("p")
-        p1.textContent = elem.name
-        p1.setAttribute("id", "name")
-
-        var p2 = document.createElement("p")
-        p2.textContent = "RS" + " " + elem.price + ".00";
-
-        var button = document.createElement("button")
-        button.textContent = "Add to Cart"
-
-
-        div.append(img, p1, p2, button);
-        document.querySelector("#container").append(div)
-    });
-</script>
+<script src="fertilizer.js"></script>
