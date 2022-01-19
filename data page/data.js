@@ -159,7 +159,7 @@ localStorage.setItem("salesData", JSON.stringify(salespagedata))
 //  Fertilizer Page Data
 
 var fertilizersdata = [{
-    image: "https: //www.plantsguru.com/image/cache/data/Fertilizers/IMG_20160520_165102-400x400.jpg",
+    image: "https://www.plantsguru.com/image/cache/Geo%20Bags/pg-Perlite-600x600.jpg",
     name: "Bio Fertilizer - Organic Fertilizer, Plant Booster Spray (Pack of 4 Liquids)",
     price: 249,
 }, {
