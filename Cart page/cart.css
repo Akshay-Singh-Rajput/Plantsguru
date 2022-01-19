@@ -1,0 +1,48 @@
+body{
+    background-color: whitesmoke;
+    font-family: Helvetica, Arial, sans-serif;
+}
+/* #carthead{
+    width: 100%;
+    background-color: #5a6981;
+    color: #ffffff;
+    margin: 0 0 20 px;
+    padding: 3px 0 5px 10px;   
+} */
+.carttable{
+    width: 100%;  
+    color: #f4f4f4;
+    background-color: #A9B8C0;
+}
+.tdimage{
+    width: 70px;
+}
+.tdname{
+    color : #2eb990;
+    font-weight: 600;
+}
+.tableheading{
+ border: 1px solid red;
+}
+ 
+/* //responsivee */
+@media screen and (min-width:420px) and (max-width:821px) {
+    #cartcontainer{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2%;
+        
+    }
+}
+@media screen and (max-width:421px) {
+    #cartcontainer{
+        
+    }
+}
+@media screen and (max-width:271px) {
+    #container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 2%;
+    }
+}

@@ -1,8 +1,6 @@
-<<<<<<< Updated upstream
-demo
-=======
 
-var imageData = [
+
+var flowersImagaeData = [
     {
         image_Url : "https://www.plantsguru.com/image/cache/flowering-plants/adenium-175x175.jpg",
         name : "Adenium Plants",
@@ -189,7 +187,7 @@ var imageData = [
 
 ///<----------------- New Line Grid View or List View----------------->///
   
-var GridimageData = [
+var flowersGridData = [
     {
         image_Url : "https://www.plantsguru.com/image/cache/color/pg-aboli-400x400.jpg",
         name : "Aboli Plant - Firecracker Flower, Crossandra Infundibuliformis",
@@ -375,11 +373,11 @@ var GridimageData = [
         price : 219.00,
     },
 
-     {
-        image_Url : "https://www.plantsguru.com/image/cache/climbers-creepers/pg-aristolochia-elegans-400x400.jpg",
-        name  : "Aster Red",
-        price : 165.00
-    }, 
+    // {
+    //     image_Url : "https://www.plantsguru.com/image/cache/data/Flowering%20Plants/Aster/plants-guru-seasonal-flowering-plants-aster-red-400x400.png",
+    //     name  : "Aster Red",
+    //     price : 165.00,
+    // }, 
     {
         image_Url : "https://www.plantsguru.com/image/cache/climbers-creepers/pg-aristolochia-elegans-400x400.jpg",
         name : "Aristolochia Elegans Plant - Duck Vine, Duck Flower Plant",
@@ -387,4 +385,9 @@ var GridimageData = [
     }
 
 ]
->>>>>>> Stashed changes
+
+
+localStorage.setItem("flowerImage", JSON.stringify(flowersImagaeData));
+
+localStorage.setItem("gridimage", JSON.stringify(flowersGridData));
+
