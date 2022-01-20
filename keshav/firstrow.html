@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+
+        /* style for search-bar */
+
+
+        #container{
+            display: flex;
+            width: 70%;
+            height: 40px;
+            margin-top: 20px;
+            margin:auto;
+            justify-content: space-between;
+        }
+        #div2>input{
+            width: 600px;
+            height: 80%;
+            background-color: white;
+            border: 0.5px solid rgb(235,235,237);
+            margin-top: 2px;
+
+        }
+        #div3>input{
+            width: 150px;
+            height: 80%;
+            border: 0.5px solid rgb(235,235,237);
+            margin-top: 2px;
+        }
+
+        /* style for nav-bar */
+
+        #nav{
+            width: 100%;
+            height: 40px;
+            background-color: rgb(46,185,144);
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+        #nav>select{
+            background-color: rgb(46,185,144);
+            color: white;
+            border: 0px solid rgb(46,185,144);
+            font-weight: bolder;
+        }
+        select > option{
+            background-color: silver;
+            padding: 30PX;
+        }
+        #flower{
+            margin-top: 20px;
+            border: 1px solid white;
+            width: 500px;
+            height: 400px;
+            contain: content;
+            
+        }
+        #bubbles{
+            border: 1px solid white;
+            width: 300px;
+            height: 400px;
+            margin-left: 520px;
+            margin-top: -400px;
+
+        }
+      
+         #Booknow{
+             border: 1px solid white;
+             width: 370px;
+             height: 200px;
+             margin-left: 900px;
+             margin-top: -400px;
+             margin-bottom: 10px;
+             
+             
+             
+         }
+         #shopnow{
+             border: 1px solid white;
+             width: 370px;
+             height: 190px;
+             margin-left: 900px;
+             margin-top: 10px;
+             }
+            #flower1{
+                border: 1px solid white;
+                width: 200px;
+                height: 200px;
+                margin-top: -104px;
+                margin-left: 170px;
+                contain: content;
+            }
+         
+            #box1{
+                border: 1 px solid blue;
+                height: 200px;
+                width:100;
+            }
+            #row2{
+                border: 1px solid white;
+                width:100%;
+                height: 350px;
+                margin-top: 40px;
+                display: flex;
+                text-align: center;
+                
+            }
+            #f1{
+                border: 1px solid white;
+                width: 25%;
+                height: 100%;
+                contain: content;
+            }
+            #nasa{
+                border: 1px solid white;
+                width: 25%;
+                height: 100%;
+                text-align: center;  
+                background-color: rgb(229, 241, 241);
+
+             }
+            #veg{
+                border: 1px solid white;
+                width: 25%;
+                height: 100%;
+                contain: content;
+            }
+            #winter{
+                border: 1px solid white;
+                width: 25%;
+                height: 100%;
+            }
+            
+            #shp1{
+                border: 1px solid white;
+               width: 190px;
+               height: 190px;
+               margin-left: 180px; 
+               margin-top: -201px;  
+            }
+            #shp2{
+                border: 1px solid white;
+               width: 180px;
+               height: 197px;
+               background-color: rgb(29,32,34);
+            
+            }
+       
+    </style>
+</head>
+<body>
+
+    <!-- code for search-bar -->
+
+
+    <div id="container">
+        <div id="div1">
+            <img src="https://www.plantsguru.com/image/cache/pg-new-187x36.png" alt="logo">
+        </div>
+        <div id="div2">
+            <input type="text" placeholder="search" >
+        </div>
+        <div id="div3">
+            <input type="text" placeholder="0">
+        </div>
+    </div>
+
+    <!-- code for nav-bar -->
+
+    <div id="nav">
+        <select><option>PLANTS</option>
+            <option>FLOWERING PLANTS</option>
+            <option>GIFT PLANTS</option>
+            <option>PLANTS BY FEATURE</option>
+            <option>PLANTS BY LOCATION</option>
+            <option>TOP PLANTS</option>
+            <option>PLANTS BY TYPE</option>
+            <option>FOLIAGE PLANTS</option>
+            <option>FLOWERS BY SEASON</option> 
+        
+        </select>
+        <select>
+                <option >
+                    SEEDS & BULBS
+                </option> 
+            <option >
+                VEGETABLE SEEDS
+            </option>
+            <option >
+               FLOWER BULBS
+            </option>
+            <option >
+               FLOWER SEEDS
+            </option>
+            <option >
+               FORESTY SEEDS
+            </option>
+        </select>
+        <select>
+            <option>POTS & PLANTERS</option>
+            <option> all plastics pots </option>
+            <option> Ceramic pots/option>
+            <option>Design pots </option>
+            <option >Geo Gro Bgas </option>
+            <option> Germination trays </option>
+        </select>
+        <select><option>GARDEN DECOR</option>
+            <option> Brid Houses</option>
+            <option>Fairy Garden </option>
+            <option> Garden Tools </option>
+            <option>Pebbles </option>
+            <option> Pots Stands </option>
+        </select>
+        <select><option>FERTILIZERS</option>
+            <option> Coco Bricks </option>
+            <option>Compost</option>
+            <option>Moist Balls</option>
+            <option>Moss Sticks</option>
+            <option> Plants Food</option>
+        </select>
+        <select><option>SALE</option>
+            <!-- need to send someother page to giv a discount -->
+        </select>
+        <select ><option>MY ACCOUNT</option>
+            <option> Login </option>
+            <option> Register </option>
+            
+        </select>
+    </div>
+
+    <!-- plants Guru creation  -->
+    <div id="flower">
+    
+<img src="https://www.plantsguru.com/image/cache/data/Flower%20Bulbs/plants-guru-flowering-bulbs-gladiolus-mix-800x800.jpg" alt="" style="width: 100%;">
+    </div>
+    <div id="bubbles"> 
+        <p style="color: rgb(46,185,144);font-weight: bold;font-size: 28px;"> WINTER FLOWER BULBS</p>       <P style="color: royalblue;font-weight: bold;"> UP TO 50% </P>
+        <h2> All india Free shipping</h2> <button style="font-size: 40px;margin-top: 60px;font-weight: bold;color:rgb(85, 85, 88);"> SHOP NOW </button>
+    </div>
+    <div id ="c_para"> </div>
+    <div id="Booknow"> 
+     <p style="color: rgb(80, 230, 230);margin-left: 20px;"> CIRPORATE </p>
+     <p style="color: green;margin-left: 20px;">GREEN GIF  </p>
+     <button style="background-color: grey; color: indigo;margin-left: 20px;">  Book Now </button>
+    <div id="flower1">
+       
+        <img src="http://www.plantsguru.com/image/data/Flowering%20Plants/Rose/plantsguru-flowering-plants-rose-red.jpg" alt="" style="width: 100%;" >    
+         
+    </div>
+    </div>
+    <div id="shopnow">
+        <div id="shp2"><img src="https://www.plantsguru.com/image/cache/bonsai/boxwood-bonsai-800x800.jpg" alt="" style="width: 100%;"> </div>  
+      <div id="shopnow1">
+          
+        <div id="shp1">
+   <h1 style="color: teal;font-size: small;margin-left: 25px;margin-top: 20PX;"> GOOD LUCK  </h1> 
+   <h1 style="color: teal;font-size: small;margin-left: 25px;margin-top: 20PX;"> BOSAI TREE</h1>
+   <h1 style="color: teal;font-size: small;margin-top: 30px;margin-left: 20px;"> STARTING @ 1099 </h1>
+   <button style="color: rgb(211, 195, 216);background-color: rgb(195, 32, 7);margin-left: 20px;">SHOPNOW </button>
+        </div>
+    
+    </div>  
+   
+</div>
+        
+    </div>
+   <!-- second row -->
+   <div id="row2"> 
+
+    <div id="f1"> 
+        <img src="https://www.plantsguru.com/image/cache/catalog/Anthurium/pg-money-plant-golden-in-ceramic-pot-800x800.jpg" alt="" style="width: 100%;">
+    </div>
+    <div id="nasa"> 
+        <h1 style="color: blue;"> NASA </h1> 
+        <H2 style="color: rgb(46,185,144);"> RECOMEMDE </H2>
+        <H2 style="color: rgb(46,185,144);">AIR PURIFY PLANT </H2>
+        <h1> UP TO 50% OFF</h1>
+        <BUTton style="background-color: cadetblue;margin-top: 35PX; font-size: large;"> SHOP NOW</BUTton>
+         </div>
+        
+    <div id="veg">
+    
+        <img src="https://www.plantsguru.com/image/cache/data/vegetable%20seeds/plants-guru-vegetable-seeds-Artichoke-Green-Globe-800x800.jpg" alt="" style="width: 100%;"> </div>
+       
+        <div id="winter"> <h1> WINTER VEGGIES </h1>
+                  <h2 style="color:blue;"> SALE!</h2>
+                  <button style="color: rgb(54, 46, 43);background-color: cornflowerblue; font-size: medium;"> FLAT 50% OFF</button>
+                 <h3> 10% EXTRA OFF ON OREDER AMOUNT 999/-</h3>
+                 <BUTton style="background-color: cadetblue;margin-top: 35PX; font-size: large;"> SHOP NOW</BUTton>
+                </div>
+
+   </div>
+
+ 
+</body>
+</html>
+
+
