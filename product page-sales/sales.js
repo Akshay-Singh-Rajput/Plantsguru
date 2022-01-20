@@ -19,7 +19,6 @@ function sortPrice() {
     }
 
     //Ascending order
-
     if (selected == "low") {
         saleitems.sort(function(a, b) {
             return a.price - b.price;
@@ -28,7 +27,7 @@ function sortPrice() {
 
     displayData(saleitems)
 
-    console.log(saleitems)
+    // console.log(saleitems)
 }
 
 
