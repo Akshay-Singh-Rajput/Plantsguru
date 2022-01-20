@@ -1,9 +1,18 @@
-#view {
+#head1 {
     background-color: #5a6981;
     width: 70%;
     padding: 1px 20px;
     color: white;
-    font-size: 18px;
+    margin: 20px auto;
+}
+
+#head2 {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #5a6981;
+    width: 70%;
+    padding: 20px 20px;
+    margin: 20px auto;
 }
 
 #container {
@@ -22,6 +31,8 @@ img {
 #container>div {
     text-align: center;
     border: 1px solid white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding-bottom: 10px;
 }
 
 #container>div:hover {
@@ -40,9 +51,16 @@ img {
 }
 
 button {
-    padding-left: 15px;
-    color: #9a9da6;
-    margin: 0 auto;
+    color: black;
+    padding: 4%;
+    border: 1px solid rgb(228, 218, 218);
+    background-color: white;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+
+button:hover {
+    color: rgb(2, 88, 88);
 }
 
 button:hover,
@@ -51,38 +69,94 @@ p:hover {
 }
 
 #name {
-    width: 60%;
+    /* border: 1px solid red; */
+    height: 80px;
     margin: 0 auto;
 }
 
 
 /* small screen */
 
-@media only screen and (min-width:0px) and (max-width:320px) {
+@media only screen and (min-width:0px) and (max-width:250px) {
     #container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 1% 1%;
+        margin: auto;
         width: 100%;
+    }
+    #head1 {
+        background-color: teal;
+        padding: 10px;
+        width: 100%;
+        margin: auto;
+        color: white;
+        margin-bottom: 10px;
+    }
+    #head2 {
+        background-color: teal;
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: right;
+        margin: auto;
+    }
+}
+
+
+/* small screen */
+
+@media only screen and (min-width:250px) and (max-width:399px) {
+    #container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1% 1%;
+        margin: auto;
+        width: 100%;
+    }
+    #head1 {
+        background-color: teal;
+        padding: 10px;
+        width: 100%;
+        margin: auto;
+        color: white;
+        margin-bottom: 10px;
+    }
+    #head2 {
+        background-color: teal;
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: right;
+        margin: auto;
     }
 }
 
 
 /* medium screen */
 
-@media only screen and (min-width:320px) and (max-width:720px) {
+@media only screen and (min-width:400px) and (max-width:800px) {
     #container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 1% 1%;
         margin: auto;
+        width: 90%;
     }
-    button {
-        color: #9a9da6;
-        padding: 0;
-        margin: 0 auto;
+    #head1 {
+        background-color: teal;
+        padding: 10px;
+        width: 90%;
+        margin: auto;
+        color: white;
+        margin-bottom: 10px;
     }
-    #name {
-        height: 20px;
+    #head2 {
+        background-color: teal;
+        width: 90%;
+        padding: 10px;
+        display: flex;
+        justify-content: right;
+        margin: auto;
     }
 }
