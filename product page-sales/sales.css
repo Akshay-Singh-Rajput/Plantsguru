@@ -21,6 +21,7 @@
     grid-gap: 1% 1%;
     width: 70%;
     margin: auto;
+    margin-bottom: 200px;
 }
 
 img {
@@ -104,15 +105,16 @@ p:hover {
 }
 
 
-/* small screen */
+/* responsiveness for small screen */
 
-@media only screen and (min-width:250px) and (max-width:399px) {
+@media only screen and (min-width:0px) and (max-width:449px) {
     #container {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-gap: 1% 1%;
         margin: auto;
         width: 100%;
+        margin-bottom: 800px;
     }
     #head1 {
         background-color: #5a6981;
@@ -135,13 +137,14 @@ p:hover {
 
 /* medium screen */
 
-@media only screen and (min-width:400px) and (max-width:800px) {
+@media only screen and (min-width:450px) and (max-width:800px) {
     #container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 1% 1%;
         margin: auto;
         width: 90%;
+        margin-bottom: 300px;
     }
     #head1 {
         background-color: #5a6981;
@@ -158,5 +161,207 @@ p:hover {
         display: flex;
         justify-content: right;
         margin: auto;
+    }
+}
+
+
+/* Footer */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#fullwidth {
+    width: 100%;
+    background-color: rgb(226, 226, 226);
+}
+
+#containerpayment {
+    width: 80%;
+    margin: auto;
+    /* border: 1px solid black; */
+    padding: 20px 0px 10px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(226, 226, 226);
+}
+
+.footereachdiv {
+    width: 18%;
+    height: 100%;
+    /* border: 1px solid green; */
+}
+
+.footereachdiv>h3,
+p {
+    text-align: center;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.footereachdiv>h3 {
+    font-size: 16px;
+    font-stretch: narrower;
+}
+
+.footereachdiv>p {
+    font-size: 14px;
+}
+
+.footereachdiv>div>p>img {
+    width: 7%;
+}
+
+.imgg>img {
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.imgg {
+    width: 30%;
+    margin: auto;
+}
+
+#socialmediaimg {
+    display: flex;
+}
+
+#socialmediaimg>img {
+    width: 10%;
+    margin: auto;
+    padding: 21% 0% 7% 0%;
+}
+
+#mainfooter {
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid firebrick; */
+    margin-top: 30px;
+}
+
+.maindiv {
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 1px solid blue; */
+}
+
+.box {
+    width: 20%;
+    /* border: 1px solid red; */
+    padding: 0px 10px;
+}
+
+.box>h3 {
+    padding: 0px 0px 12px 30px;
+    margin: 12px 0px;
+    border-bottom: 1px solid gray;
+    color: rgb(95, 95, 95);
+}
+
+#last {
+    text-align: center;
+}
+
+#last>img {
+    width: 16px;
+    height: 16px;
+}
+
+li {
+    list-style: none;
+    color: gray;
+}
+
+.stylebox1>li::before {
+    content: ">";
+    color: black;
+    margin: 5px
+}
+
+.stylebox2>li::before {
+    content: ">";
+    color: rgb(31, 187, 166);
+    margin: 5px
+}
+
+@media only screen and (min-width:0px) and (max-width:400px) {
+    #containerpayment {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        width: 100%;
+    }
+    .footereachdiv {
+        width: 100%;
+    }
+    .licontent {
+        display: none;
+    }
+    .maindiv {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .box {
+        width: 100%;
+    }
+    .box>h3 {
+        margin: 0px;
+        padding: 5px 5px;
+        font-size: 15px;
+        margin: 10px 5px;
+    }
+    #last>p {
+        font-size: 12px;
+    }
+    #last>img {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+
+/* for medium screen */
+
+@media only screen and (min-width:401px) and (max-width:880px) {
+    #containerpayment {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .footereachdiv {
+        width: 100%;
+    }
+    .licontent {
+        display: none;
+    }
+    .maindiv {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .box {
+        width: 100%;
+    }
+    .box>h3 {
+        margin: 0px;
+        padding: 5px 5px;
+        font-size: 15px;
+        margin: 0px 10px;
+    }
+    #last>p {
+        font-size: 12px;
+    }
+    #last>img {
+        width: 15px;
+        height: 15px;
     }
 }

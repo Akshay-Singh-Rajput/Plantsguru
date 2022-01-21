@@ -2,32 +2,64 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sales Page</title>
-    <link rel="stylesheet" href="sales.css">
-
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Page</title>
+    <script src="https://kit.fontawesome.com/c83c965a44.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="cartpg.css">
 </head>
 
 <body>
 
-    <div id="head1">
-        <p>Special Offers</p>
-    </div>
-
-    <div id="head2">
-        <select name="" id="sortprice" onchange="sortPrice()">
-            <option value="">Default</option>
-            <option value="high">High to Low</option>
-            <option value="low">Low to High</option>
-        </select>
-    </div>
-
     <div id="container">
+        <div id="head">
+            <p>Shopping Cart</p>
+        </div>
+
+        <div class="tableheading">
+            <table>
+                <thead class="carttable">
+                    <tr>
+                        <th>Image</th>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Unit Price</th>
+                        <th>Total</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div id="head">
+            <p>What would you like to do next?</p>
+        </div>
+
+        <div id="Coupon-div">
+            <form action="">
+                <input id="Coupon" type="text" placeholder="Enter Your Coupon here">
+                <input type="submit" value="Apply">
+            </form>
+
+        </div>
+
+        <div id="total-div">
+            <p id="subtotal"></p>
+            <p id="total"></p>
+        </div>
+
+        <div id="cart-bottom-btn">
+            <button>Continue Shoping</button>
+            <button>Checkout</button>
+        </div>
+
+
 
     </div>
-
 
     <!-- Footer -->
     <div id="fullwidth">
@@ -154,5 +186,4 @@
 </body>
 
 </html>
-<script src="sales.js"></script>
-<script src="../data page/data.js"></script>
+<script src="cartpg.js"></script>
