@@ -1,0 +1,177 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#cartcontainer {       /*whole table inside this div */
+  /* border: 1px solid red; */
+  width: 90%;
+  margin: auto;
+  text-align: center; 
+  /* vertical-align: middle; */
+  
+}
+#toatlflex{      /*shopping cart text */
+   display: flex;
+    background-color: #5a6981;
+    color: white;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+
+.carttable {           /*  table heading rows*/
+  width: 100%;
+  height: 40px;
+  color: #f4f4f4;
+  background-color: #a9b8c0;
+  justify-content: right;
+  
+}
+.tdname {                     /* name in table data */
+  color: #2eb990;
+  font-weight: 600;
+}
+.tableheading .textimage {       /* div for control images */
+  width: 10%;
+  /* height: 10%; */
+}
+.tdimage {                  /* image control by img class */
+  width: 30%;
+  /* height: 60%; */
+  margin: 10% 1%;
+  background-color: grey;
+  /* border: 1px solid red; */
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  padding: 2px;
+  border-bottom: 1px solid silver;
+}
+.tableheading .textname {          /* div for control name */
+  width: 40%;
+}
+.tdname {
+  height: 20px;
+}
+.tableheading .textqnty {             /* div for control qnty  */
+  width: 15%;
+}
+.tdinput{                             /*input input box for qnty*/
+  width: 30px;
+  padding-left: 2px;
+}
+.tableheading .textprice {           /* div for control price */
+  width: 10%;
+}
+.tableheading .texttotal {        /* div for control total */
+  width: 10%;
+}
+tr,
+th,td {
+  border-bottom: 1px solid silver;
+  margin: 20px 10px;
+}
+.update {                                /*  update img of td */
+  width: 10%;
+  margin-left: 10px;
+}
+.remove {                       /*  remove img of td */
+  width: 8%;
+  margin-left: 10px;
+}
+
+.divflex {                       /* flex for update & remove imgs  */
+  display: inline;
+  width: 100%;
+}
+.htag{                            /*  Bottom text */
+  background-color: #A9B8C0;
+  height: 30px;
+  color: white;
+  text-align: left;
+  padding: 10px 0 5px 10px ;
+  
+}
+.ptag{                            /* bottom text  */
+  text-align: left;
+  background-color: #f4f4f4ad;
+}
+
+
+
+/* //responsive */
+@media screen and (min-width: 420px) and (max-width: 821px) {
+  .tableheading .textimage {
+    width: 5%;
+  }
+  .tdname {
+    color: #2eb990;
+    font-weight: 200;
+    font-size: 14px;
+  }
+  .tdtotal {
+    font-size: 10px;
+  }
+  .update {
+    width: 14%;
+    margin-left: 8px;
+  }
+  .remove {
+    width: 12%;
+    margin-left: 8px;
+  }
+  .tdprice {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 421px) {
+  .tableheading .textimage {
+    width: 2%;
+    height: 10px;
+  }
+  .tdname {
+    color: #2eb990;
+    font-weight: 150;
+    font-size: 10px;
+  }
+  .tdprice {
+    font-size: 12px;
+  }
+  .tdtotal {
+    font-size: 12px;
+  }
+
+  .update {
+    width: 10%;
+    margin-left: 8px;
+  }
+  .remove {
+    width: 7%;
+    margin-left: 6px;
+  }
+}
+@media screen and (max-width: 271px) {
+  .tableheading .textimage {
+    width: 2%;
+    height: 10px;
+  }
+  .tdname {
+    color: #2eb990;
+    font-weight: 100;
+    font-size: 8px;
+  }
+  .tdprice {
+    font-size: 10px;
+  }
+  .tdtotal {
+    font-size: 10px;
+  }
+  .update {
+    width: 10%;
+    margin-left: 5px;
+  }
+  .remove {
+    width: 7%;
+    margin-left: 5px;
+  }
+}
