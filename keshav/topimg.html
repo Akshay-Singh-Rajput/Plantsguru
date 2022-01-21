@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #contop{
+            width: 75%;
+            height: 450px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        #contop>#bigdiv1{
+            width: 62%;
+            height: 100%;
+            
+        }
+        #contop>#smdiv{
+            width: 36%;
+            height: 100%;
+            margin-right: 5px;
+            
+        }
+        #bigdiv1{
+            display: flex;
+        }
+        #bigdiv1>#bigid1{
+            width: 52%;
+            height: 100%;
+        }
+        #bigdiv1>#bigid2{
+            width: 48%;
+            height: 100%;
+        }
+        #bigid1>img{
+            width: 100%;
+            height: 100%;
+        }
+        #bigid2>img{
+            width: 150px;
+            height: 150px;
+            margin-left: 25%;
+            margin-top: 10px;
+            border-radius: 50%;
+        }
+        #bigid2{
+            text-align: center;
+            background-color: rgb(235, 233, 230);
+        }
+        #hr{
+            width: 150px;
+            background-color: rgb(223, 81, 25);
+            height: 1px;
+        }
+        #bigid2>#bigid2h1{
+            color: rgb(223, 81, 25);
+        }
+        #bigid2>#bigid2h2,#bigid2h4{
+            color: rgb(34, 159, 241);
+            margin-top: 5px;
+        }
+        #bigid2>#bigid2h3{
+            font-size: 50px;
+            color: rgb(223, 81, 25);
+        }
+        #bigid2button{
+            height: 50px;
+            color: rgb(223, 81, 25);
+            font-weight: bold;
+            font-size: 30px;
+            background-color: rgb(190, 221, 241);
+            border: 0px rgb(186, 214, 233);
+            margin:auto;
+        }
+        #smdiv>#smid1,#smid2{
+            width: 100%;
+            height: 48%;
+        }
+        #smid1{
+            display: flex;
+            text-align: center;
+            border: 2px solid rgb(230,187,50);
+        }
+        #smid1p{
+            width: 45%;
+            height: 100%;
+            background-color: rgb(254,245,236);
+        }
+        #smid1img{
+            width: 55%;
+            height: 100%;
+        }
+        #imgdiv>img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-top: 2px;
+        }
+        #smid1p>h3{
+            color: rgb(12,140,153);
+        }
+        #smid1p>p{
+            color: rgb(73,193,154);
+            margin-top: 5px;
+        }
+        #sm1button{
+            background-color: rgb(1,137,153);
+            color: rgb(205,222,201);
+            border: rgb(1,137,153);
+            border: 0px;
+            height: 30px;
+            width: 120px;
+            padding: 5px;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+        #smid1img>img{
+            width: 100%;
+            height: 100%;
+        }
+        #smid2{
+            margin-top: 15px;
+            display: flex;
+            border: 2px solid rgb(161,173,62);
+        }
+        #smid2p{
+            width: 45%;
+            height: 100%;
+            background-color: rgb(254,255,215);
+            text-align: center;
+        }
+        #smid2img{
+            width: 55%;
+            height: 100%;
+        }
+        #smid2img>img{
+            width: 100%;
+            height: 100%;
+        }
+        #smid2p>p{
+            color: rgb(248,57,90);
+            margin-top: 35px;
+        }
+        #smid2p>h3,h6{
+            color: rgb(17,96,100);
+        }
+        #sm2button{
+            color: white;
+            background-color: rgb(17,96,100);
+            border: 0px;
+            height: 30px;
+            width: 100px;
+            padding: 5px;
+            margin: auto;
+        }
+
+        #con{
+            width: 75%;
+            height: 300px;
+            display: flex;
+            margin: auto;
+            margin-top: 20px;
+            justify-content: space-between;
+        }
+        #con>#con1,#con2{
+            width: 49%;
+            height: 100%;
+            display: flex;
+        }
+        #con1>#con1img{
+            width: 55%;
+            height: 100%;  
+        }
+        #con1>#con1p{
+            width: 45%;
+            height: 100%;
+            background-color: rgb(232,236,247);
+        }
+        #con1img>img{
+            width: 100%;
+            height: 100%;
+        }
+        #con1p>h1,h2{
+            color: rgb(153,52,85);    
+        }
+        #con1p>h5,h4{
+            color: rgb(50,82,125);
+        }
+        #con1p>#con1button{
+            color: white;
+            background-color: rgb(50,82,125);
+            height: 30px;
+            width: 100px;
+            border: 0px;
+            margin-left: 80px;
+        }
+        #con1p>h1,h5,h4{
+            margin-left: 30px;
+        }
+        #con1p>h2{
+            text-align: center;
+        }
+        #con2>#con2img{
+            width: 55%;
+            height: 100%;
+        }
+        #con2>#con2p{
+            width: 45%;
+            height: 100%;
+            text-align: center;
+            background-color: rgb(235,235,237);
+        }
+        #con2img>img{
+            width: 100%;
+            height: 100%;
+        }
+        #con2p>h2,h1,p{
+            color: rgb(45,78,121);
+        }
+        #con2p>#flat{
+            width: 150px;
+            height: 40px;
+            color: rgb(228,14,63);
+            background-color: rgb(182,195,212);
+            font-size: 16px;
+            font-weight: bold;
+            border: 0px;
+        }
+        #con2p>#con2button{
+            width: 100px;
+            height: 30px;
+            border: 0px;
+            color: white;
+            background-color: rgb(45,78,121);
+        }
+    </style>
+</head>
+<body>
+    <!-- code for top big image -->
+
+    <div id="contop">
+        <div id="bigdiv1">
+            <div id="bigid1">
+                <img src="https://www.plantsguru.com/image/cache/bulbs/tulip-happy-generation-800x800.jpg" alt="">
+            </div>
+            <div id="bigid2">
+                <h1 id="bigid2h1">WINTER</h1>
+                <hr id="hr">
+                <h2 id="bigid2h2">FLOWER BULBS</h2>
+                <h3 id="bigid2h3">UPTO 50% OFF</h3>
+                <h4 id="bigid2h4">ALL INDIA FREE SHIPPING</h4>
+                <button id="bigid2button">SHOP NOW </button>
+            </div>
+        </div>
+        <div id="smdiv">
+            <div id="smid1">
+                <div id="smid1p">
+                    <h3>CORPORATE</h3>
+                    <p>GREEN GIFT</p>
+                    <h6>STARTING @99 INR</h6>
+                    <button id="sm1button">BOOK NOW</button>
+                    <div id="imgdiv">
+                        <img src="https://freeiconshop.com/wp-content/uploads/edd/gift-flat.png" alt="">
+                    </div>
+                </div>
+                <div id="smid1img">
+                    <img src="http://www.plantsguru.com/image/data/Lucky%20Bamboo/plantsguru-lucky-bamboo-2layer-bamboo.png" alt="">
+                </div>
+            </div>
+            <div id="smid2">
+                <div id="smid2img">
+                    <img src="https://www.plantsguru.com/image/cache/data/Bonsai/plants-guru-bonsai-plants-ficus-i-shape-800x800.JPG" alt="">
+                </div>
+                <div id="smid2p">
+                    <p>GOOD LUCK</p>
+                    <h3>BONSAI TREE</h3>
+                    <h6>STARTING @ 1099</h6>
+                    <button id="sm2button">SHOP NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="con">
+        <div id="con1">
+            <div id="con1img">
+                <img src="https://www.plantsguru.com/image/cache/data/Palms/plants-guru-palms-and-cycades-date-palm-800x800.jpg" alt="">
+            </div>
+            <div id="con1p">
+                <h1>NASA</h1>
+                <h5>RECOMMENDED</h5>
+                <h4>AiR PURIFY PLANTS</h4>
+                <hr>
+                <h2>UP TO 50% OFF</h2>
+                <button id="con1button">SHOP NOW</button>
+
+            </div>
+            
+        </div>
+        <div id="con2">
+            <div id="con2img">
+                <img src="https://www.plantsguru.com/image/cache/data/vegetable%20seeds/plants-guru-vegetable-seeds-sponge-gourd-f1-hybrid-komal-800x800.jpg" alt="">
+
+            </div>
+            <div id="con2p">
+                <h2>WINTER VEGGIES</h2>
+                <h1>SALE!</h1>
+                <button id="flat">FLAT 50% OFF</button>
+                <p>10% EXTRA OFF ON ORDER AMOUNT 999/-</p>
+                <button id="con2button">SHOP NOW</button>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
