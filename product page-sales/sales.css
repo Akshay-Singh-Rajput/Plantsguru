@@ -105,7 +105,7 @@ p:hover {
 }
 
 
-/* small screen */
+/* responsiveness for small screen */
 
 @media only screen and (min-width:0px) and (max-width:449px) {
     #container {
