@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* style for search-bar */
+
+        #container{
+            display: flex;
+            width: 70%;
+            height: 40px;
+            margin-top: 20px;
+            margin:auto;
+            justify-content: space-between;
+        }
+        #div1>img{
+            height: 100%;
+        }
+        #div2>input{
+            width: 600px;
+            height: 80%;
+            background-color: white;
+            border: 0.5px solid rgb(235,235,237);
+            margin-top: 2px;
+
+        }
+        #div3>input{
+            width: 150px;
+            height: 80%;
+            border: 0.5px solid rgb(235,235,237);
+            margin-top: 2px;
+        }
+
+        /* style for nav-bar */
+
+        #nav{
+            width: 100%;
+            height: 40px;
+            background-color: rgb(46,185,144);
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+        #nav>select{
+            background-color: rgb(46,185,144);
+            color: white;
+            border: 0px solid rgb(46,185,144);
+            font-weight: bolder;
+        }
+
+        /* style for top big image */
+
+        #contop{
+            width: 75%;
+            height: 450px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        #contop>#bigdiv1{
+            width: 62%;
+            height: 100%;
+            
+        }
+        #contop>#smdiv{
+            width: 36%;
+            height: 100%;
+            margin-right: 5px;
+            
+        }
+        #bigdiv1{
+            display: flex;
+        }
+        #bigdiv1>#bigid1{
+            width: 52%;
+            height: 100%;
+        }
+        #bigdiv1>#bigid2{
+            width: 48%;
+            height: 100%;
+        }
+        #bigid1>img{
+            width: 100%;
+            height: 100%;
+        }
+        #bigid2>img{
+            width: 150px;
+            height: 150px;
+            margin-left: 25%;
+            margin-top: 10px;
+            border-radius: 50%;
+        }
+        #bigid2{
+            text-align: center;
+            background-color: rgb(235, 233, 230);
+        }
+        #hr{
+            width: 150px;
+            background-color: rgb(223, 81, 25);
+            height: 1px;
+        }
+        #bigid2>#bigid2h1{
+            color: rgb(223, 81, 25);
+        }
+        #bigid2>#bigid2h2,#bigid2h4{
+            color: rgb(34, 159, 241);
+            margin-top: 5px;
+        }
+        #bigid2>#bigid2h3{
+            font-size: 50px;
+            color: rgb(223, 81, 25);
+        }
+        #bigid2button{
+            height: 50px;
+            color: rgb(223, 81, 25);
+            font-weight: bold;
+            font-size: 30px;
+            background-color: rgb(190, 221, 241);
+            border: 0px rgb(186, 214, 233);
+            margin:auto;
+        }
+        #smdiv>#smid1,#smid2{
+            width: 100%;
+            height: 48%;
+        }
+        #smid1{
+            display: flex;
+            text-align: center;
+            border: 2px solid rgb(230,187,50);
+        }
+        #smid1p{
+            width: 45%;
+            height: 100%;
+            background-color: rgb(254,245,236);
+        }
+        #smid1img{
+            width: 55%;
+            height: 100%;
+        }
+        #imgdiv>img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-top: 2px;
+        }
+        #smid1p>h3{
+            color: rgb(12,140,153);
+        }
+        #smid1p>p{
+            color: rgb(73,193,154);
+            margin-top: 5px;
+        }
+        #sm1button{
+            background-color: rgb(1,137,153);
+            color: rgb(205,222,201);
+            border: rgb(1,137,153);
+            border: 0px;
+            height: 30px;
+            width: 120px;
+            padding: 5px;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+        #smid1img>img{
+            width: 100%;
+            height: 100%;
+        }
+        #smid2{
+            margin-top: 15px;
+            display: flex;
+            border: 2px solid rgb(161,173,62);
+        }
+        #smid2p{
+            width: 45%;
+            height: 100%;
+            background-color: rgb(254,255,215);
+            text-align: center;
+        }
+        #smid2img{
+            width: 55%;
+            height: 100%;
+        }
+        #smid2img>img{
+            width: 100%;
+            height: 100%;
+        }
+        #smid2p>p{
+            color: rgb(248,57,90);
+            margin-top: 35px;
+        }
+        #smid2p>h3,h6{
+            color: rgb(17,96,100);
+        }
+        #sm2button{
+            color: white;
+            background-color: rgb(17,96,100);
+            border: 0px;
+            height: 30px;
+            width: 100px;
+            padding: 5px;
+            margin: auto;
+        }
+
+        #con{
+            width: 75%;
+            height: 300px;
+            display: flex;
+            margin: auto;
+            margin-top: 20px;
+            justify-content: space-between;
+        }
+        #con>#con1,#con2{
+            width: 49%;
+            height: 100%;
+            display: flex;
+        }
+        #con1>#con1img{
+            width: 55%;
+            height: 100%;  
+        }
+        #con1>#con1p{
+            width: 45%;
+            height: 100%;
+            background-color: rgb(232,236,247);
+        }
+        #con1img>img{
+            width: 100%;
+            height: 100%;
+        }
+        #con1p>#con1h1,#con1h2{
+            color: rgb(153,52,85);    
+        }
+        #con1p>#con1h5,#con1h4{
+            color: rgb(50,82,125);
+        }
+        #con1p>#con1button{
+            color: white;
+            background-color: rgb(50,82,125);
+            height: 30px;
+            width: 120px;
+            border: 0px;
+            padding-bottom: 26px;
+            margin-left: 60px;
+        }
+        #con1p>#con1h1,#con1h5,#con1h4{
+            margin-left: 30px;
+        }
+        #con1p>#con1h2{
+            text-align: center;
+        }
+        #con2>#con2img{
+            width: 55%;
+            height: 100%;
+        }
+        #con2>#con2p{
+            width: 45%;
+            height: 100%;
+            text-align: center;
+            background-color: rgb(235,235,237);
+        }
+        #con2img>img{
+            width: 100%;
+            height: 100%;
+        }
+        #con2p>#con2h1,#con2h1,#con2p2{
+            color: rgb(45,78,121);
+        }
+        #con2p>#flat{
+            width: 150px;
+            height: 40px;
+            color: rgb(228,14,63);
+            background-color: rgb(182,195,212);
+            font-size: 16px;
+            font-weight: bold;
+            border: 0px;
+            margin-right: 45px;
+        }
+        #con2p>#con2button{
+            width: 110px;
+            height: 30px;
+            border: 0px;
+            padding-top: 7px;
+            color: white;
+            margin-right: 50px;
+            background-color: rgb(45,78,121);
+        }
+
+        /* style for navbar of best selling products */
+
+        .nav1{
+            width: 75%;
+            height: 40px;
+            background-color: rgb(46,185,144);
+            color: white;
+            margin: auto;
+            margin-bottom: 20px;
+            margin-top: 40px;
+        }
+        .nav1>h4{
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+
+        /* style for best selling products */
+
+        #bsp{
+            width: 75%;
+            height: 350px;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+        }
+        #bsp>.class{
+            width: 15.5%;
+            height: 100%;
+            border: 1px solid rgb(236, 229, 229);
+        }
+        img{
+            width: 100%;
+            height: 50%;
+        }
+        .bsp{
+            color: rgb(43, 39, 39);
+            text-align:center;
+            margin-top: 10px;
+            height: 60px;
+        }
+        .class>h3{
+            width: 70%;
+            border: 0.5px solid rgb(236, 229, 229);
+            text-align:center;
+            padding: 5px;
+            margin: auto;
+        }
+        button{
+            padding: 10px;
+            margin-left: 20%;
+            margin-top: 10px;
+            width: 60%;
+            font-size: 16px;
+            border:rgb(167, 158, 158);
+        }
+
+        /* style for seeds and bulbs */
+
+        .seeds{
+            width: 75%;
+            height: 250px;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+        }
+        .seeds>.bulbs{
+            width: 15.5%;
+            height: 100%;
+            text-align: center;
+            border: 0.5px solid rgb(236, 229, 229);
+        }
+        .SBimg{
+            width: 100%;
+            height: 80%;
+        }
+
+        /* style of bigdiv of BUY PLANTS BY CATAGORY */
+
+        #bigdiv{
+            width: 75%;
+            height: 300px;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            margin-top: 20px;
+        }
+        #bigdiv>.smdiv{
+            width: 49%;
+            height: 100%;
+            display: flex;
+        }
+        .smdiv>img{
+            width: 55%;
+            height: 100%;
+        }
+        #text{
+            text-align: center;
+            background-color: rgb(222,229,239);
+            
+        }
+        #text>h1,#smh2,h6{
+            color: rgb(124,19,147);
+        }
+        #smh2{
+            font-size: 18px;
+        }
+        #text>.idh3,h5,#button1{
+            color: rgb(153,52,85);
+        }
+        #text>#button1{
+            border: 2px solid rgb(124,19,147);
+            margin: auto;
+            background-color: rgb(222,229,238);
+            padding: 5px;
+        }
+        #text2{
+            text-align: center;
+            background-color:rgb(183,183,183);
+        }
+        #text2>h1,#idh2,#idh4{
+            color: rgb(39,55,123);
+        }
+        #idh2{
+            font-size: 18px;
+        }
+        #text2>#button2,#idh3{
+            color: rgb(153,52,85);
+            font-size: 20px;
+        }
+        #text2>#idh4{
+            background-color: rgb(216,217,219);
+            width:fit-content;
+            margin: auto;   
+        }
+        #text2>#button2{
+            margin:auto;
+            background-color: rgb(216,217,219);
+            
+        }
+
+        /* style for payment footer */
+
+
+        #containerpayment{
+            width: 100%;
+            height: 150px;
+            display: flex;
+            justify-content: space-evenly;
+            background-color: rgb(243,243,243);
+            margin-top: 20px;
+        }
+        #containerpayment>div{
+            width: 20%;
+            height: 100%; 
+            text-align: center; 
+            margin-top: 10px; 
+        }
+        .footer>img{
+            margin-top: 10px;
+            height: 50px;
+            width: 50px;
+            background-color: rgb(46,185,144);
+            border-radius: 50%;
+        }
+        .h3footer{
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+        .footerp{
+            margin-top: 0px;
+            font-size: 16px;
+        }
+        #paraimg>img{
+            width: 15px;
+            height: 15px;
+            font-weight: bold
+        }
+        #social>img{
+            width: 30px;
+            height: 30px;
+            margin-top: 20px;
+        }
+
+        /*  style for info footer */
+
+        #info{
+            width: 75%;
+            height: 250px;
+            display: flex;
+            margin: auto;
+            margin-top: 20px;
+        }
+        #info>.policy{
+            width: 18%;
+            height: 100%;
+            margin-left: 20px ;
+        }
+        .policy>hr{
+            background-color: gray;
+        }
+
+        /* style for last */
+        #last{
+            text-align: center;
+        }
+        #last>img{
+            width: 16px;
+            height: 16px;
+            
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!-- code for search-bar -->
+
+
+    <div id="container">
+        <div id="div1">
+            <img src="https://www.plantsguru.com/image/cache/pg-new-187x36.png" alt="logo">
+        </div>
+        <div id="div2">
+            <input type="text" placeholder="search" >
+        </div>
+        <div id="div3">
+            <input type="text" placeholder="0">
+        </div>
+    </div>
+
+    <!-- code for nav-bar -->
+
+    <div id="nav">
+        <select><option>PLANTS</option></select>
+        <select><option>SEEDS & BULBS</option></select>
+        <select><option>POTS & PLANTERS</option></select>
+        <select><option>GARDEN DECOR</option></select>
+        <select><option>FERTILIZERS</option></select>
+        <select><option>SALE</option></select>
+        <select><option>MY ACCOUNT</option></select>
+    </div>
+
+    <!-- code for top big image -->
+
+    <div id="contop">
+        <div id="bigdiv1">
+            <div id="bigid1">
+                <img src="https://www.plantsguru.com/image/cache/bulbs/tulip-happy-generation-800x800.jpg" alt="">
+            </div>
+            <div id="bigid2">
+                <h1 id="bigid2h1">WINTER</h1>
+                <hr id="hr">
+                <h2 id="bigid2h2">FLOWER BULBS</h2>
+                <h3 id="bigid2h3">UPTO 50% OFF</h3>
+                <h4 id="bigid2h4">ALL INDIA FREE SHIPPING</h4>
+                <button id="bigid2button">SHOP NOW </button>
+            </div>
+        </div>
+        <div id="smdiv">
+            <div id="smid1">
+                <div id="smid1p">
+                    <h3>CORPORATE</h3>
+                    <p>GREEN GIFT</p>
+                    <h6>STARTING @99 INR</h6>
+                    <button id="sm1button">BOOK NOW</button>
+                    <div id="imgdiv">
+                        <img src="https://freeiconshop.com/wp-content/uploads/edd/gift-flat.png" alt="">
+                    </div>
+                </div>
+                <div id="smid1img">
+                    <img src="http://www.plantsguru.com/image/data/Lucky%20Bamboo/plantsguru-lucky-bamboo-2layer-bamboo.png" alt="">
+                </div>
+            </div>
+            <div id="smid2">
+                <div id="smid2img">
+                    <img src="https://www.plantsguru.com/image/cache/data/Bonsai/plants-guru-bonsai-plants-ficus-i-shape-800x800.JPG" alt="">
+                </div>
+                <div id="smid2p">
+                    <p>GOOD LUCK</p>
+                    <h3>BONSAI TREE</h3>
+                    <h6>STARTING @ 1099</h6>
+                    <button id="sm2button">SHOP NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="con">
+        <div id="con1">
+            <div id="con1img">
+                <img src="https://www.plantsguru.com/image/cache/data/Palms/plants-guru-palms-and-cycades-date-palm-800x800.jpg" alt="">
+            </div>
+            <div id="con1p">
+                <h1 id="con1h1">NASA</h1>
+                <h5 id="con1h5">RECOMMENDED</h5>
+                <h4 id="con1h4">AiR PURIFY PLANTS</h4>
+                <hr id="con1hr">
+                <h2 id="con1h2">UP TO 50% OFF</h2>
+                <button id="con1button">SHOP NOW</button>
+
+            </div>
+            
+        </div>
+        <div id="con2">
+            <div id="con2img">
+                <img src="https://www.plantsguru.com/image/cache/data/vegetable%20seeds/plants-guru-vegetable-seeds-sponge-gourd-f1-hybrid-komal-800x800.jpg" alt="">
+
+            </div>
+            <div id="con2p">
+                <h2 id="con2h2">WINTER VEGGIES</h2>
+                <h1 id="con2h1">SALE!</h1>
+                <button id="flat">FLAT 50% OFF</button>
+                <p id="con2p2">10% EXTRA OFF ON ORDER AMOUNT 999/-</p>
+                <button id="con2button">SHOP NOW</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- code of navbar of best selling products -->
+
+    <div class="nav1">
+        <h4>BEST SELLING PRODUCTS</h4>
+    </div>
+    
+
+    <!-- code of best selling products  -->
+
+    <div id="bsp">
+        <div class="class">
+            <img src="https://www.plantsguru.com/image/cache/climbers-creepers/pg-scented-rose-800x800.jpg" alt="">
+            <p class="bsp">Rose Plant - Scented (desi) Gawathi Gulaab Plant</p>
+            <h3>Rs 240.00</h3>
+            <button>Add to cart</button>
+        </div>
+        <div class="class">
+            <img src="https://www.plantsguru.com/image/cache/catalog/Calanchoe/pg-medicinal-plants-costus-igneus-500x457-800x800.jpg" alt="">
+            <p class="bsp">Costus Igneus - Insulin Plant</p>
+            <h3>Rs 249.00</h3>
+            <button>Add to cart</button>
+        </div>
+        <div class="class">
+            <img src="https://www.plantsguru.com/image/cache/data/Climbers/plants-guru-climbers-and-creepers-sankrant-vel-800x800.jpg" alt="">
+            <p class="bsp">Sankrant Vel - Pyrostegia Venusta, Flame Vine, Venusta Creeper</p>
+            <h3>Rs 299.00</h3>
+            <button>Add to cart</button>
+        </div>
+        <div class="class">
+            <img src="https://www.plantsguru.com/image/cache/data/Flowering%20Plants/Jasmine/plantsguru-floweringplants-mogra-double-800x800.JPG" alt="">
+            <p class="bsp">Arabian Jasmine - Mogra Double Plant</p>
+            <h3>Rs 219.00</h3>
+            <button>Add to cart</button>
+        </div>
+        <div class="class">
+            <img src="https://www.plantsguru.com/image/cache/catalog/Palm/pg-areca-palm-800x800.jpg" alt="">
+            <p class="bsp">Areca Palm live Indoor Air Purify House Plant</p>
+            <h3>Rs 349.00</h3>
+            <button>Add to cart</button>
+        </div>
+        <div class="class">
+            <img src="https://www.plantsguru.com/image/cache/data/Rose/plants-guru-rose-plants-climibing-rose-pink-800x800.jpg" alt="">
+            <p class="bsp">Climbing Rose (Creeper) Pink Plant</p>
+            <h3>Rs 599.00</h3>
+            <button>Add to cart</button>
+        </div>
+    </div>
+
+    <!-- code of navbar of buy plants by catagory -->
+
+    <div class="nav1">
+        <h4>BUY PLANTS BY CATAGORY</h4>
+    </div>
+
+    <!-- code for BUY plants by catagory -->
+
+    <div class="seeds">
+        <div class="bulbs">
+            <img class="SBimg" src="https://www.plantsguru.com/image/cache/data/Flowering%20Plants/African%20Voilet/plants-guru-seasonal-flowering-plants-african-violet-white-800x800.jpg" alt="">
+            <p>Indoor Plants</p>
+        </div>
+        <div class="bulbs">
+            <img class="SBimg" src="https://www.plantsguru.com/image/cache/medicinal-pants/pg-annatto-plant-800x800.jpg" alt="">
+            <p>Medicinal Plants</p>
+        </div>
+        <div class="bulbs">
+            <img class="SBimg" src="https://www.plantsguru.com/image/cache/cacti/frizzle-sizzle-plant-800x800.jpg" alt="">
+            <p>Cactus & Succulents</p>
+        </div>
+        <div class="bulbs">
+            <img class="SBimg" src="https://www.plantsguru.com/image/cache/data/medicinal-plants/plants-guru-medicinal-plants-amla-big-800x800.jpg" alt="">
+            <p>Vastu & Religious</p>
+        </div>
+        <div class="bulbs">
+            <img class="SBimg"src="https://www.plantsguru.com/image/cache/data/Fruit%20Plants/plantsguru-fruitplants-apple-800x800.jpg" alt="">
+            <p>Fruit Plants</p>
+        </div>
+        <div class="bulbs">
+            <img class="SBimg" src="https://www.plantsguru.com/image/cache/data/Bonsai/plants-guru-bonsai-plants-ficus-i-shape-800x800.JPG" alt="">
+            <p>Bonsai Plants</p>
+        </div>
+    </div>
+    
+    <div id="bigdiv">
+        <div class="smdiv">
+            <img src="https://www.plantsguru.com/image/cache/data/flowering%20seeds/plants-guru-flowering-seeds-Pansy-F1-Beconsifield-800x800.jpg" alt="">
+            <div id="text">
+            <h1>WINTER</h1>
+            <h3 class="idh3">FLOWER SEEDS</h3>
+            <h2 id="smh2">UPTO 50% OFF</h2>
+            <h5>EXTRA 10% OFF ON ORDER AMOUNT 999</h5>
+            <h6>FAST SHIPPING - ALL INDIA DELIVERY</h6>
+            <button id="button1">SHOP NOW</button>
+            </div>
+        </div>
+        <div class="smdiv">
+            <img src="https://www.plantsguru.com/image/cache/catalog/succulents/trifasciata-Hahnii-800x800.jpg" alt="">
+            <div id="text2">
+                <h1>DEST PLANTS</h1>
+                <h3 id="idh3">WITH</h3>
+                <h2 id="idh2">CERAMIC PLANTERS</h2>
+                <h4 id="idh4">100% DAMAGE PROTECTION</h4>
+                <h5>FAST SHIPPING - ALL INDAI DELIVERY</h5>
+                <button id="button2">SHOP NOW</button>
+               
+            </div>
+
+        </div>
+    </div>
+
+    <!--code of navbar of seeds and bulbs  -->
+
+    <div class="nav1">
+        <h4>SEEDS AND BULBS</h4>
+    </div>
+
+    <!-- code for seeds ans bulbs -->
+
+    <div class="seeds">
+        <div class="bulbs">
+            <img class="SBimg" src="https://www.plantsguru.com/image/cache/data/vegetable%20seeds/plants-guru-vegetable-seeds-Cherry-Tamato-800x800.JPG" alt="">
+            <p>Vegetable Seeds</p>
+        </div>
+        <div class="bulbs">
+            <img class="SBimg" src="https://www.plantsguru.com/image/cache/data/Special%20Seeds/plants-guru-special-seeds-climibing-rose-white-seeds-800x800.jpg" alt="">
+            <p>Flower Seeds</p>
+        </div>
+        <div class="bulbs">
+            <img class="SBimg" src="https://www.plantsguru.com/image/cache/data/Seeds%20Pack/plants-guru-seeds-and-bulbs-herbs-seeds-pack-800x800.jpg" alt="">
+            <p>Herbs Seeds</p>
+        </div>
+        <div class="bulbs">
+            <img class="SBimg" src="https://www.plantsguru.com/image/cache/bulbs/crinum-lilly-800x800.jpg" alt="">
+            <p>Flower bulbs</p>
+        </div>
+        <div class="bulbs">
+            <img class="SBimg"src="https://www.plantsguru.com/image/cache/bulbs-seeds/tree-seeds-175x175.jpg" alt="">
+            <p>Foresty Seeds</p>
+        </div>
+        <div class="bulbs">
+            <img class="SBimg" src="https://www.plantsguru.com/image/cache/data/medicinal%20seeds/plantsguru-medicinalseeds-Tulsi-Seeds-800x800.jpg" alt="">
+            <p>Medical Seeds</p>
+        </div>
+    </div>
+
+    <!-- code for navbar of pots and planters -->
+
+    <div class="nav1">
+        <h4>POTS AND PLANTERS</h4>
+    </div>
+
+    <!-- code of pots and planters -->
+
+    <div class="seeds">
+        <div class="bulbs">
+            <img class="SBimg" src="https://www.plantsguru.com/image/cache/catalog/ceramicpots/pg-clay-pot-mix-800x800.jpg" alt="">
+            <p>Ceramic Pots</p>
+        </div>
+        <div class="bulbs">
+            <img class="SBimg" src="https://www.plantsguru.com/image/cache/data/Pots/Self%20Watering%20Pots/plantsguru-potsandplanters-self-watering-pot-4inch-800x800.png" alt="">
+            <p>Self Watering Pots</p>
+        </div>
+        <div class="bulbs">
+            <img class="SBimg" src="https://www.plantsguru.com/image/cache/data/Pots/Round%20pots/plantsguru-round-pots-designer-planter-no-3-800x800.jpg" alt="">
+            <p>All Plastic Pots</p>
+        </div>
+        <div class="bulbs">
+            <img class="SBimg" src="https://www.plantsguru.com/image/cache/data/Pots/Germination%20Trays/plantsguru-potsandplanters-germination-tray-round-800x800.png" alt="">
+            <p>Germination Trays</p>
+        </div>
+        <div class="bulbs">
+            <img class="SBimg"src="https://www.plantsguru.com/image/cache/metal-planter/_DSC2107-800x800.JPG" alt="">
+            <p>Grill/Railing Pots</p>
+        </div>
+        <div class="bulbs">
+            <img class="SBimg" src="https://www.plantsguru.com/image/cache/metal-planter/pg-butterfly-yellow-metal-pot-planter-800x800.jpg" alt="">
+            <p>Round Pots</p>
+        </div>
+    </div>
+
+    <!-- code for navbar of garden decor -->
+
+    <div class="nav1">
+        <h4>GARDEN DECOR</h4>
+    </div>
+
+    <!-- code for garden decor -->
+
+    <div class="seeds">
+        <div class="bulbs">
+            <img class="SBimg" src="https://www.plantsguru.com/image/cache/garden-tools/bird-house/bird-house-square-blue-800x800.jpg" alt="">
+            <p>Bird Houses</p>
+        </div>
+        <div class="bulbs">
+            <img class="SBimg" src="https://www.plantsguru.com/image/cache/garden-tools/fairy-garden/fairy-garden-mashroom-ceramic-mix-800x800.jpg" alt="">
+            <p>Fairy Garden</p>
+        </div>
+        <div class="bulbs">
+            <img class="SBimg" src="https://www.plantsguru.com/image/cache/garden-tools/garden-fountain/Garden-fountain-with-ganesha-polyresin-800x800.jpg" alt="">
+            <p>Garden Fountains</p>
+        </div>
+        <div class="bulbs">
+            <img class="SBimg" src="https://www.plantsguru.com/image/cache/garden-tools/garden-tools/garden-tool-kit-800x800.jpg" alt="">
+            <p>Garden Tools</p>
+        </div>
+        <div class="bulbs">
+            <img class="SBimg"src="https://www.plantsguru.com/image/cache/catalog/Garden%20Decor/pg-pebbles-mix-800x800.jpg" alt="">
+            <p>Pebbles</p>
+        </div>
+        <div class="bulbs">
+            <img class="SBimg" src="https://www.plantsguru.com/image/cache/garden-tools/pot-stand/3-step-stand-for-pots-800x800.jpeg" alt="">
+            <p>Pot Stands</p>
+        </div>
+    </div>
+
+    <!-- code for navbar of fertilizer -->
+
+    <div class="nav1">
+        <h4>FERTILIZERS</h4>
+    </div>
+
+    <!-- code for fertilizer -->
+
+    <div class="seeds">
+        <div class="bulbs">
+            <img class="SBimg" src="https://www.plantsguru.com/image/cache/Geo%20Bags/pg-coco-chips-800x800.jpg" alt="">
+            <p>Coco Briks</p>
+        </div>
+        <div class="bulbs">
+            <img class="SBimg" src="https://www.plantsguru.com/image/cache/data/Fertilizers/plantsguru-fertilizers-garden-angel-800x800.jpg" alt="">
+            <p>Compost</p>
+        </div>
+        <div class="bulbs">
+            <img class="SBimg" src="https://www.plantsguru.com/image/cache/data/Fertilizers/Plantsguru-fertilizers-vermicompost-800x800.jpg" alt="">
+            <p>Cow Manure</p>
+        </div>
+        <div class="bulbs">
+            <img class="SBimg" src="https://www.plantsguru.com/image/cache/data/Fertilizers/pg-moist-ball-800x800.jpg" alt="">
+            <p>Moist Balls</p>
+        </div>
+        <div class="bulbs">
+            <img class="SBimg"src="https://www.plantsguru.com/image/cache/catalog/Garden%20Tools/pg-moss-stick-800x800.jpg" alt="">
+            <p>Moss Sticks</p>
+        </div>
+        <div class="bulbs">
+            <img class="SBimg" src="https://www.plantsguru.com/image/cache/data/Fertilizers/Plantsguru-fertilizers-neem-cake-800x800.png" alt="">
+            <p>Plants Food</p>
+        </div>
+    </div>
+
+    <!-- code for payment footer -->
+
+
+    <div id="containerpayment">
+        <div></div>
+        <div class="footer">
+            <img src="https://cdn-icons-png.flaticon.com/512/1019/1019607.png" >
+            <h3 class="h3footer">SECURE PAYMENT</h3>
+            <P class="footerp">100% Secure Payment</P>
+        </div>
+        <div class="footer">
+            <img src="https://icons-for-free.com/iconfiles/png/512/shipping+truck+icon-1320165997161801796.png" >
+            <h3 class="h3footer">FREE SHIPPING</h3>
+            <p class="footerp">For Orders Above Rs. 599</p>
+        </div>
+        <div class="footer">
+            <img src="https://i.pinimg.com/originals/7f/5d/36/7f5d36152b35a4893ba8a5482a93ebee.jpg" >
+            <h3 class="h3footer">ONLINE NURSERY</h3>
+            <p class="footerp">India's 1 Plants Shop</p>
+        </div>
+        <div id="social">
+            <p id="paraimg">SHOW US SOME <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Eo_circle_green_heart.svg/768px-Eo_circle_green_heart.svg.png"> ON SOCIAL MEDIA</p>
+            <img src="https://cdn-icons-png.flaticon.com/512/59/59439.png" >
+            <img src="https://cdn.icon-icons.com/icons2/791/PNG/512/TWITTER_icon-icons.com_65486.png" alt="">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25425.png">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25681.png" alt="">
+            <img src="https://www.freeiconspng.com/thumbs/pinterest-logo-icon/pinterest-icon-15.png" alt="">
+        </div>
+        <div></div>
+    </div>
+     
+
+    <!-- code for info footer -->
+
+
+    <div id="info">
+        <div class="policy">
+            <h4>POLICY INFO</h4>
+            <hr>
+            <p>> Cancel & Refund</p>
+            <p>> Privacy Policy</p>
+            <p>> Terms & Condition</p>
+            <p>> Site Map</p>
+        </div>
+        <div class="policy">
+             <h4>MY ACCOUNT</h4>
+             <hr>
+             <p>> Order History</p>
+             <p>> Wish List (0)</p>
+             <p>> Newsletter</p>
+             <p>> Login</p>
+        </div>
+        <div class="policy">
+            <h4>NEED HELP</h4>
+            <hr>
+            <p>Contact Us</p>
+            <p>Cancellation & Refund</p>
+            <p>Policies</p>
+            <p>Gift Vouchers</p>
+        </div>
+        <div class="policy">
+            <h4>COMPANY INFO</h4>
+            <hr>
+            <p>About Us</p>
+            <p>Contact Us</p>
+            <p>Green Wall</p>
+        </div>
+        <div class="policy">
+            <h4>OFFICE ADDRESS</h4>
+            <hr>
+            <p>Serve No. 6/A, More Basti, Manjari Road, National Grape Research Center, Phursungi Phata Pune, 412307, India. Phone: +91-8468888666</p>
+        </div>
+    </div>
+
+    <!-- code for last line -->
+
+    
+    <hr>
+    <div id="last">
+        <img src="https://www.freepnglogos.com/uploads/copyright/copyright-symbol-nik-nak-old-peculiar-copyright-and-the-hargreves-report-28.png" alt=""> Plants Guru 2014. | www.plantsguru.com</p>
+    </div>
+</body>
+</html>
