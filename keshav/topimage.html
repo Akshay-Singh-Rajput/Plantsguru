@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #container{
+            width: 75%;
+            height: 450px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        #container>#bigdiv{
+            width: 60%;
+            height: 100%;
+            
+        }
+        #container>#smdiv{
+            width: 38%;
+            height: 100%;
+            
+        }
+        #bigdiv{
+            display: flex;
+        }
+        #bigdiv>#bigid1{
+            width: 55%;
+            height: 100%;
+        }
+        #bigdiv>#bigid2{
+            width: 45%;
+            height: 100%;
+        }
+        #bigid1>img{
+            width: 100%;
+            height: 100%;
+        }
+        #smdiv>#smid1,#smid2{
+            width: 100%;
+            height: 48%;
+            border: 1px solid red;
+        }
+        #smid2{
+            margin-top: 15px;
+        }
+        #bigid2>img{
+            width: 150px;
+            height: 150px;
+            margin-left: 25%;
+            margin-top: 10px;
+            border-radius: 50%;
+        }
+        #bigid2{
+            text-align: center;
+            background-color: rgb(235, 233, 230);
+        }
+        hr{
+            width: 150px;
+            background-color: rgb(223, 81, 25);
+            height: 1px;
+        }
+        #bigid2>#bigid2h1{
+            color: rgb(223, 81, 25);
+        }
+        #bigid2>#bigid2h2,#bigid2h4{
+            color: rgb(34, 159, 241);
+            margin-top: 5px;
+        }
+        #bigid2>#bigid2h3{
+            font-size: 50px;
+            color: rgb(223, 81, 25);
+        }
+        #bigid2button{
+            height: 30px;
+            color: rgb(223, 81, 25);
+            font-weight: bold;
+            background-color: rgb(190, 221, 241);
+            border: 0px rgb(186, 214, 233);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="bigdiv">
+            <div id="bigid1">
+                <img src="https://www.plantsguru.com/image/cache/bulbs/tulip-happy-generation-800x800.jpg" alt="">
+            </div>
+            <div id="bigid2">
+                <h1 id="bigid2h1">WINTER</h1>
+                <hr>
+                <h2 id="bigid2h2">FLOWER BULBS</h2>
+                <h3 id="bigid2h3">UPTO 50% OFF</h3>
+                <h4 id="bigid2h4">ALL INDIA FREE SHIPPING</h4>
+                <button id="bigid2button">SHOP NOW </button>
+            </div>
+        </div>
+        <div id="smdiv">
+            <div id="smid1"></div>
+            <div id="smid2"></div>
+        </div>
+    </div>
+</body>
+</html>
