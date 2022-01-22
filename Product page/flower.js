@@ -1,72 +1,113 @@
 // Only images
-var flowerImage = JSON.parse(localStorage.getItem("flowerImage"));
 
-flowerImage.map(function (elem) {
-  var div1 = document.createElement("div");   //div1 - append(image,name)
-  div1.setAttribute('class',"div1")           //class - div1       
-  //img creation
-  var onlyimage = document.createElement("img"); 
-  onlyimage.setAttribute("src", elem.image_Url);     // image display
+var flowerImage = JSON.parse(localStorage.getItem("flowersImage"))
+flowerImage.map(function(elem) {
+    var div1 = document.createElement("div"); //div1 - append(image,name)
+    div1.setAttribute("class", "div1"); //class - div1
 
-  var name = document.createElement("p");
-  name.textContent = elem.name;                      // name display
+    div1.onmouseover = addevent;
 
+    function addevent() {
+        name.style.color = "white";
+        div1.style.backgroundColor = "#2eb990";
+        div1.style.border = "3px solid #2eb990";
+    }
+    div1.onmouseout = endevent;
 
-  div1.append(onlyimage,name);                //appending to div1
+    function endevent() {
+        name.style.color = "";
+        div1.style.border = "";
+        div1.style.backgroundColor = "";
+    }
+    //img creation
+    var onlyimage = document.createElement("img");
+    onlyimage.setAttribute("src", elem.image); // image display
 
-  container.append(div1);                        //appending div1 to container
+    var name = document.createElement("p");
+    name.textContent = elem.name; // name display
+
+    div1.append(onlyimage, name); //appending to div1
+
+    productcontainer.append(div1); //appending div1 to container
 });
 
 
-//Buy products image started
-var gridimage = JSON.parse(localStorage.getItem("gridimage"));
-
-var cartArr = JSON.parse(localStorage.getItem("cartItems")) || [];
 
 
-gridimage.map(function (elem) {
-  var div2 = document.createElement("div");   //div2 - append(image,name)
+//Buy products image & data started
 
-  //img creation
-  var image = document.createElement("img");
-  image.setAttribute("src", elem.image_Url);   // image display
 
-  //name creation
-  var name = document.createElement("h4");
-  name.textContent = elem.name;                // name display
+var saleitems = JSON.parse(localStorage.getItem("gridImage"))
 
-  var div3 = document.createElement("div")       //div3 - append(price,btn)
-        
+var cartArr = JSON.parse(localStorage.getItem("CartItems")) || []
 
-  // price creation
-  var price = document.createElement("h4");
-  price.textContent = "₹" + " " + elem.price + ".00";   //price display
-  price.style.borderTop = "0.5px solid lightgrey";
-  price.style.borderBottom = "0.5px solid lightgrey";
-  price.style.borderTopWidth="1px";
-  price.style.borderBottomWidth="1px";
+displayData(saleitems)
 
-  //cartbtn creation
-  var cartbtn = document.createElement("button");
-  cartbtn.addEventListener("click",function(){
-      addTocart(elem);
-    });
-    cartbtn.setAttribute("id","cartbtn");                 //add to cart btn
-    cartbtn.textContent = "Add to Cart";
 
-  div3.append(price, cartbtn)                      //apending btn price to div3            
-  div2.append(image,name,div3);               //apending image,name, div3 to div2  
+// Sorting By Price here
 
-  container.append(div2);                     //apending div2 to container
-});
-function addTocart(elem){
-    cartArr.push(elem);
-    localStorage.setItem("cartItems", JSON.stringify(cartArr));
-    alert("Added to Cart");
-};
+function sortPrice() {
+    var selected = document.querySelector("#sortbyprice").value;
 
-var next = document.createElement("p")
-  next.textContent = "NEXT";
-//   next.style.width = "100%";
-  next.style.border ="1px solid red";
-  container.append(next)
+    //Decending order
+
+    if (selected == "high") {
+        saleitems.sort(function(a, b) {
+            return b.price - a.price;
+        })
+    }
+
+    //Ascending order
+    if (selected == "low") {
+        saleitems.sort(function(a, b) {
+            return a.price - b.price;
+        })
+    }
+
+    displayData(saleitems)
+
+    // console.log(saleitems)
+}
+
+
+
+function displayData(saleitems) {
+    document.querySelector("#salescontainer").textContent = ""
+
+    saleitems.map(function(data) {
+        var div = document.createElement("div")
+
+        var img = document.createElement("img")
+        img.setAttribute("src", data.image)
+
+
+        var p = document.createElement("p");
+        p.textContent = data.name
+        p.setAttribute("id", "name")
+
+
+        var p2 = document.createElement("p")
+        p2.textContent = "RS" + " " + data.price
+
+
+        var button = document.createElement("button")
+        button.textContent = "Add to Cart"
+        button.addEventListener("click", function() { //adding eventlisterner to "Add to cart button"
+            addtoCart(data)
+        })
+
+        div.append(img, p, p2, button)
+        document.querySelector("#salescontainer").append(div)
+    })
+
+    // Adding to cart here
+
+    function addtoCart(data) {
+        cartArr.push(data)
+        alert(data.name + "  " + "Added")
+        localStorage.setItem("CartItems", JSON.stringify(cartArr))
+
+    }
+
+
+}
