@@ -1,64 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
-        body{
+        body {
             font-family: Arial, Helvetica, sans-serif;
         }
-
         /* style for search-bar */
-
-        #container{
+        
+        #container {
             display: flex;
             width: 70%;
             height: 40px;
             margin-top: 20px;
-            margin:auto;
+            margin: auto;
             justify-content: space-between;
         }
-        #div1>img{
+        
+        #div1>img {
             height: 100%;
         }
-        #div2>input{
+        
+        #div2>input {
             width: 600px;
             height: 80%;
             background-color: white;
-            border: 0.5px solid rgb(235,235,237);
+            border: 0.5px solid rgb(235, 235, 237);
             margin-top: 2px;
-
         }
-        #div3>input{
+        
+        #div3>input {
             width: 150px;
             height: 80%;
-            border: 0.5px solid rgb(235,235,237);
+            border: 0.5px solid rgb(235, 235, 237);
             margin-top: 2px;
         }
-
         /* style for nav-bar */
-
-        #nav{
+        
+        #nav {
             width: 100%;
             height: 40px;
-            background-color: rgb(46,185,144);
+            background-color: rgb(46, 185, 144);
             display: flex;
             justify-content: space-around;
             margin-top: 10px;
         }
-        #nav>select{
-            background-color: rgb(46,185,144);
+        
+        #nav>select {
+            background-color: rgb(46, 185, 144);
             color: white;
-            border: 0px solid rgb(46,185,144);
+            border: 0px solid rgb(46, 185, 144);
             font-weight: bolder;
         }
-
         /* style for top big image */
-
-        #contop{
+        
+        #contop {
             width: 75%;
             height: 450px;
             margin: auto;
@@ -66,103 +66,124 @@
             justify-content: space-between;
             margin-top: 30px;
         }
-        #contop>#bigdiv1{
+        
+        #contop>#bigdiv1 {
             width: 62%;
             height: 100%;
-            
         }
-        #contop>#smdiv{
+        
+        #contop>#smdiv {
             width: 36%;
             height: 100%;
             margin-right: 5px;
-            
         }
-        #bigdiv1{
+        
+        #bigdiv1 {
             display: flex;
         }
-        #bigdiv1>#bigid1{
+        
+        #bigdiv1>#bigid1 {
             width: 52%;
             height: 100%;
         }
-        #bigdiv1>#bigid2{
+        
+        #bigdiv1>#bigid2 {
             width: 48%;
             height: 100%;
         }
-        #bigid1>img{
+        
+        #bigid1>img {
             width: 100%;
             height: 100%;
         }
-        #bigid2>img{
+        
+        #bigid2>img {
             width: 150px;
             height: 150px;
             margin-left: 25%;
             margin-top: 10px;
             border-radius: 50%;
         }
-        #bigid2{
+        
+        #bigid2 {
             text-align: center;
             background-color: rgb(235, 233, 230);
         }
-        #hr{
+        
+        #hr {
             width: 150px;
             background-color: rgb(223, 81, 25);
             height: 1px;
         }
-        #bigid2>#bigid2h1{
+        
+        #bigid2>#bigid2h1 {
             color: rgb(223, 81, 25);
         }
-        #bigid2>#bigid2h2,#bigid2h4{
+        
+        #bigid2>#bigid2h2,
+        #bigid2h4 {
             color: rgb(34, 159, 241);
             margin-top: 5px;
         }
-        #bigid2>#bigid2h3{
+        
+        #bigid2>#bigid2h3 {
             font-size: 50px;
             color: rgb(223, 81, 25);
         }
-        #bigid2button{
+        
+        #bigid2button {
             height: 50px;
             color: rgb(223, 81, 25);
             font-weight: bold;
             font-size: 30px;
             background-color: rgb(190, 221, 241);
             border: 0px rgb(186, 214, 233);
-            margin:auto;
+            margin: auto;
         }
-        #smdiv>#smid1,#smid2{
+        
+        #smdiv>#smid1,
+        #smid2 {
             width: 100%;
             height: 48%;
         }
-        #smid1{
+        
+        #smid1 {
             display: flex;
             text-align: center;
-            border: 2px solid rgb(230,187,50);
+            border: 2px solid rgb(230, 187, 50);
         }
-        #smid1p{
+        
+        #smid1p {
             width: 45%;
             height: 100%;
-            background-color: rgb(254,245,236);
+            background-color: rgb(254, 245, 236);
         }
-        #smid1img{
+        
+        #smid1img {
             width: 55%;
             height: 100%;
         }
-        #imgdiv>img{
+        
+        #imgdiv>img {
             width: 40px;
             height: 40px;
             border-radius: 50%;
             margin-top: 2px;
         }
-        #smid1p>h3{
-            color: rgb(12,140,153);
+        
+        #smid1p>h3 {
+            color: rgb(12, 140, 153);
         }
-        #smid1p>p{
-            color: rgb(73,193,154);
+        
+        #smid1p>p {
+            color: rgb(73, 193, 154);
             margin-top: 5px;
         }
-        #sm1button{
-            background-color: rgb(1,137,153);
-            color: rgb(205,222,201);
-            border: rgb(1,137,153);
+        
+        #sm1button {
+            background-color: rgb(1, 137, 153);
+            color: rgb(205, 222, 201);
+            border: rgb(1, 137, 153);
             border: 0px;
             height: 30px;
             width: 120px;
@@ -170,47 +191,56 @@
             margin: auto;
             margin-bottom: 10px;
         }
-        #smid1img>img{
+        
+        #smid1img>img {
             width: 100%;
             height: 100%;
         }
-        #smid2{
+        
+        #smid2 {
             margin-top: 15px;
             display: flex;
-            border: 2px solid rgb(161,173,62);
+            border: 2px solid rgb(161, 173, 62);
         }
-        #smid2p{
+        
+        #smid2p {
             width: 45%;
             height: 100%;
-            background-color: rgb(254,255,215);
+            background-color: rgb(254, 255, 215);
             text-align: center;
         }
-        #smid2img{
+        
+        #smid2img {
             width: 55%;
             height: 100%;
         }
-        #smid2img>img{
+        
+        #smid2img>img {
             width: 100%;
             height: 100%;
         }
-        #smid2p>p{
-            color: rgb(248,57,90);
+        
+        #smid2p>p {
+            color: rgb(248, 57, 90);
             margin-top: 35px;
         }
-        #smid2p>h3,h6{
-            color: rgb(17,96,100);
+        
+        #smid2p>h3,
+        h6 {
+            color: rgb(17, 96, 100);
         }
-        #sm2button{
+        
+        #sm2button {
             color: white;
-            background-color: rgb(17,96,100);
+            background-color: rgb(17, 96, 100);
             border: 0px;
             height: 30px;
             width: 100px;
             padding: 5px;
             margin: auto;
         }
-
-        #con{
+        
+        #con {
             width: 75%;
             height: 300px;
             display: flex;
@@ -218,161 +248,187 @@
             margin-top: 20px;
             justify-content: space-between;
         }
-        #con>#con1,#con2{
+        
+        #con>#con1,
+        #con2 {
             width: 49%;
             height: 100%;
             display: flex;
         }
-        #con1>#con1img{
+        
+        #con1>#con1img {
             width: 55%;
-            height: 100%;  
+            height: 100%;
         }
-        #con1>#con1p{
+        
+        #con1>#con1p {
             width: 45%;
             height: 100%;
-            background-color: rgb(232,236,247);
+            background-color: rgb(232, 236, 247);
         }
-        #con1img>img{
+        
+        #con1img>img {
             width: 100%;
             height: 100%;
         }
-        #con1p>#con1h1,#con1h2{
-            color: rgb(153,52,85);    
+        
+        #con1p>#con1h1,
+        #con1h2 {
+            color: rgb(153, 52, 85);
         }
-        #con1p>#con1h5,#con1h4{
-            color: rgb(50,82,125);
+        
+        #con1p>#con1h5,
+        #con1h4 {
+            color: rgb(50, 82, 125);
         }
-        #con1p>#con1button{
+        
+        #con1p>#con1button {
             color: white;
-            background-color: rgb(50,82,125);
+            background-color: rgb(50, 82, 125);
             height: 30px;
             width: 120px;
             border: 0px;
             padding-bottom: 26px;
             margin-left: 60px;
         }
-        #con1p>#con1h1,#con1h5,#con1h4{
+        
+        #con1p>#con1h1,
+        #con1h5,
+        #con1h4 {
             margin-left: 30px;
         }
-        #con1p>#con1h2{
+        
+        #con1p>#con1h2 {
             text-align: center;
         }
-        #con2>#con2img{
+        
+        #con2>#con2img {
             width: 55%;
             height: 100%;
         }
-        #con2>#con2p{
+        
+        #con2>#con2p {
             width: 45%;
             height: 100%;
             text-align: center;
-            background-color: rgb(235,235,237);
+            background-color: rgb(235, 235, 237);
         }
-        #con2img>img{
+        
+        #con2img>img {
             width: 100%;
             height: 100%;
         }
-        #con2p>#con2h1,#con2h1,#con2p2{
-            color: rgb(45,78,121);
+        
+        #con2p>#con2h1,
+        #con2h1,
+        #con2p2 {
+            color: rgb(45, 78, 121);
         }
-        #con2p>#flat{
+        
+        #con2p>#flat {
             width: 150px;
             height: 40px;
-            color: rgb(228,14,63);
-            background-color: rgb(182,195,212);
+            color: rgb(228, 14, 63);
+            background-color: rgb(182, 195, 212);
             font-size: 16px;
             font-weight: bold;
             border: 0px;
             margin-right: 45px;
         }
-        #con2p>#con2button{
+        
+        #con2p>#con2button {
             width: 110px;
             height: 30px;
             border: 0px;
             padding-top: 7px;
             color: white;
             margin-right: 50px;
-            background-color: rgb(45,78,121);
+            background-color: rgb(45, 78, 121);
         }
-
         /* style for navbar of best selling products */
-
-        .nav1{
+        
+        .nav1 {
             width: 75%;
             height: 40px;
-            background-color: rgb(46,185,144);
+            background-color: rgb(46, 185, 144);
             color: white;
             margin: auto;
             margin-bottom: 20px;
             margin-top: 40px;
         }
-        .nav1>h4{
+        
+        .nav1>h4 {
             padding-top: 10px;
             padding-left: 10px;
         }
-
         /* style for best selling products */
-
-        #bsp{
+        
+        #bsp {
             width: 75%;
             height: 350px;
             display: flex;
             justify-content: space-between;
             margin: auto;
         }
-        #bsp>.class{
+        
+        #bsp>.class {
             width: 15.5%;
             height: 100%;
             border: 1px solid rgb(236, 229, 229);
         }
-        img{
+        
+        img {
             width: 100%;
             height: 50%;
         }
-        .bsp{
+        
+        .bsp {
             color: rgb(43, 39, 39);
-            text-align:center;
+            text-align: center;
             margin-top: 10px;
             height: 60px;
         }
-        .class>h3{
+        
+        .class>h3 {
             width: 70%;
             border: 0.5px solid rgb(236, 229, 229);
-            text-align:center;
+            text-align: center;
             padding: 5px;
             margin: auto;
         }
-        button{
+        
+        button {
             padding: 10px;
             margin-left: 20%;
             margin-top: 10px;
             width: 60%;
             font-size: 16px;
-            border:rgb(167, 158, 158);
+            border: rgb(167, 158, 158);
         }
-
         /* style for seeds and bulbs */
-
-        .seeds{
+        
+        .seeds {
             width: 75%;
             height: 250px;
             display: flex;
             justify-content: space-between;
             margin: auto;
         }
-        .seeds>.bulbs{
+        
+        .seeds>.bulbs {
             width: 15.5%;
             height: 100%;
             text-align: center;
             border: 0.5px solid rgb(236, 229, 229);
         }
-        .SBimg{
+        
+        .SBimg {
             width: 100%;
             height: 80%;
         }
-
         /* style of bigdiv of BUY PLANTS BY CATAGORY */
-
-        #bigdiv{
+        
+        #bigdiv {
             width: 75%;
             height: 300px;
             display: flex;
@@ -380,134 +436,157 @@
             margin: auto;
             margin-top: 20px;
         }
-        #bigdiv>.smdiv{
+        
+        #bigdiv>.smdiv {
             width: 49%;
             height: 100%;
             display: flex;
         }
-        .smdiv>img{
+        
+        .smdiv>img {
             width: 55%;
             height: 100%;
         }
-        #text{
+        
+        #text {
             text-align: center;
-            background-color: rgb(222,229,239);
-            
+            background-color: rgb(222, 229, 239);
         }
-        #text>h1,#smh2,h6{
-            color: rgb(124,19,147);
+        
+        #text>h1,
+        #smh2,
+        h6 {
+            color: rgb(124, 19, 147);
         }
-        #smh2{
+        
+        #smh2 {
             font-size: 18px;
         }
-        #text>.idh3,h5,#button1{
-            color: rgb(153,52,85);
+        
+        #text>.idh3,
+        h5,
+        #button1 {
+            color: rgb(153, 52, 85);
         }
-        #text>#button1{
-            border: 2px solid rgb(124,19,147);
+        
+        #text>#button1 {
+            border: 2px solid rgb(124, 19, 147);
             margin: auto;
-            background-color: rgb(222,229,238);
+            background-color: rgb(222, 229, 238);
             padding: 5px;
         }
-        #text2{
+        
+        #text2 {
             text-align: center;
-            background-color:rgb(183,183,183);
+            background-color: rgb(183, 183, 183);
         }
-        #text2>h1,#idh2,#idh4{
-            color: rgb(39,55,123);
+        
+        #text2>h1,
+        #idh2,
+        #idh4 {
+            color: rgb(39, 55, 123);
         }
-        #idh2{
+        
+        #idh2 {
             font-size: 18px;
         }
-        #text2>#button2,#idh3{
-            color: rgb(153,52,85);
+        
+        #text2>#button2,
+        #idh3 {
+            color: rgb(153, 52, 85);
             font-size: 20px;
         }
-        #text2>#idh4{
-            background-color: rgb(216,217,219);
-            width:fit-content;
-            margin: auto;   
+        
+        #text2>#idh4 {
+            background-color: rgb(216, 217, 219);
+            width: fit-content;
+            margin: auto;
         }
-        #text2>#button2{
-            margin:auto;
-            background-color: rgb(216,217,219);
-            
+        
+        #text2>#button2 {
+            margin: auto;
+            background-color: rgb(216, 217, 219);
         }
-
         /* style for payment footer */
-
-
-        #containerpayment{
+        
+        #containerpayment {
             width: 100%;
             height: 150px;
             display: flex;
             justify-content: space-evenly;
-            background-color: rgb(243,243,243);
+            background-color: rgb(243, 243, 243);
             margin-top: 20px;
         }
-        #containerpayment>div{
+        
+        #containerpayment>div {
             width: 20%;
-            height: 100%; 
-            text-align: center; 
-            margin-top: 10px; 
+            height: 100%;
+            text-align: center;
+            margin-top: 10px;
         }
-        .footer>img{
+        
+        .footer>img {
             margin-top: 10px;
             height: 50px;
             width: 50px;
-            background-color: rgb(46,185,144);
+            background-color: rgb(46, 185, 144);
             border-radius: 50%;
         }
-        .h3footer{
+        
+        .h3footer {
             margin-bottom: 5px;
             margin-top: 5px;
         }
-        .footerp{
+        
+        .footerp {
             margin-top: 0px;
             font-size: 16px;
         }
-        #paraimg>img{
+        
+        #paraimg>img {
             width: 15px;
             height: 15px;
             font-weight: bold
         }
-        #social>img{
+        
+        #social>img {
             width: 30px;
             height: 30px;
             margin-top: 20px;
         }
-
         /*  style for info footer */
-
-        #info{
+        
+        #info {
             width: 75%;
             height: 250px;
             display: flex;
             margin: auto;
             margin-top: 20px;
         }
-        #info>.policy{
+        
+        #info>.policy {
             width: 18%;
             height: 100%;
-            margin-left: 20px ;
+            margin-left: 20px;
         }
-        .policy>hr{
+        
+        .policy>hr {
             background-color: gray;
         }
-
         /* style for last */
-        #last{
+        
+        #last {
             text-align: center;
         }
-        #last>img{
+        
+        #last>img {
             width: 16px;
             height: 16px;
-            
         }
-
     </style>
 
 </head>
+
 <body>
 
     <!-- code for search-bar -->
@@ -518,7 +597,7 @@
             <img src="https://www.plantsguru.com/image/cache/pg-new-187x36.png" alt="logo">
         </div>
         <div id="div2">
-            <input type="text" placeholder="search" >
+            <input type="text" placeholder="search">
         </div>
         <div id="div3">
             <input type="text" placeholder="0">
@@ -596,7 +675,7 @@
                 <button id="con1button">SHOP NOW</button>
 
             </div>
-            
+
         </div>
         <div id="con2">
             <div id="con2img">
@@ -622,7 +701,7 @@
     <div class="nav1">
         <h4>BEST SELLING PRODUCTS</h4>
     </div>
-    
+
 
     <!-- code of best selling products  -->
 
@@ -691,7 +770,7 @@
             <p>Vastu & Religious</p>
         </div>
         <div class="bulbs">
-            <img class="SBimg"src="https://www.plantsguru.com/image/cache/data/Fruit%20Plants/plantsguru-fruitplants-apple-800x800.jpg" alt="">
+            <img class="SBimg" src="https://www.plantsguru.com/image/cache/data/Fruit%20Plants/plantsguru-fruitplants-apple-800x800.jpg" alt="">
             <p>Fruit Plants</p>
         </div>
         <div class="bulbs">
@@ -699,17 +778,17 @@
             <p>Bonsai Plants</p>
         </div>
     </div>
-    
+
     <div id="bigdiv">
         <div class="smdiv">
             <img src="https://www.plantsguru.com/image/cache/data/flowering%20seeds/plants-guru-flowering-seeds-Pansy-F1-Beconsifield-800x800.jpg" alt="">
             <div id="text">
-            <h1>WINTER</h1>
-            <h3 class="idh3">FLOWER SEEDS</h3>
-            <h2 id="smh2">UPTO 50% OFF</h2>
-            <h5>EXTRA 10% OFF ON ORDER AMOUNT 999</h5>
-            <h6>FAST SHIPPING - ALL INDIA DELIVERY</h6>
-            <button id="button1">SHOP NOW</button>
+                <h1>WINTER</h1>
+                <h3 class="idh3">FLOWER SEEDS</h3>
+                <h2 id="smh2">UPTO 50% OFF</h2>
+                <h5>EXTRA 10% OFF ON ORDER AMOUNT 999</h5>
+                <h6>FAST SHIPPING - ALL INDIA DELIVERY</h6>
+                <button id="button1">SHOP NOW</button>
             </div>
         </div>
         <div class="smdiv">
@@ -721,7 +800,7 @@
                 <h4 id="idh4">100% DAMAGE PROTECTION</h4>
                 <h5>FAST SHIPPING - ALL INDAI DELIVERY</h5>
                 <button id="button2">SHOP NOW</button>
-               
+
             </div>
 
         </div>
@@ -753,7 +832,7 @@
             <p>Flower bulbs</p>
         </div>
         <div class="bulbs">
-            <img class="SBimg"src="https://www.plantsguru.com/image/cache/bulbs-seeds/tree-seeds-175x175.jpg" alt="">
+            <img class="SBimg" src="https://www.plantsguru.com/image/cache/bulbs-seeds/tree-seeds-175x175.jpg" alt="">
             <p>Foresty Seeds</p>
         </div>
         <div class="bulbs">
@@ -788,7 +867,7 @@
             <p>Germination Trays</p>
         </div>
         <div class="bulbs">
-            <img class="SBimg"src="https://www.plantsguru.com/image/cache/metal-planter/_DSC2107-800x800.JPG" alt="">
+            <img class="SBimg" src="https://www.plantsguru.com/image/cache/metal-planter/_DSC2107-800x800.JPG" alt="">
             <p>Grill/Railing Pots</p>
         </div>
         <div class="bulbs">
@@ -823,7 +902,7 @@
             <p>Garden Tools</p>
         </div>
         <div class="bulbs">
-            <img class="SBimg"src="https://www.plantsguru.com/image/cache/catalog/Garden%20Decor/pg-pebbles-mix-800x800.jpg" alt="">
+            <img class="SBimg" src="https://www.plantsguru.com/image/cache/catalog/Garden%20Decor/pg-pebbles-mix-800x800.jpg" alt="">
             <p>Pebbles</p>
         </div>
         <div class="bulbs">
@@ -858,7 +937,7 @@
             <p>Moist Balls</p>
         </div>
         <div class="bulbs">
-            <img class="SBimg"src="https://www.plantsguru.com/image/cache/catalog/Garden%20Tools/pg-moss-stick-800x800.jpg" alt="">
+            <img class="SBimg" src="https://www.plantsguru.com/image/cache/catalog/Garden%20Tools/pg-moss-stick-800x800.jpg" alt="">
             <p>Moss Sticks</p>
         </div>
         <div class="bulbs">
@@ -873,23 +952,23 @@
     <div id="containerpayment">
         <div></div>
         <div class="footer">
-            <img src="https://cdn-icons-png.flaticon.com/512/1019/1019607.png" >
+            <img src="https://cdn-icons-png.flaticon.com/512/1019/1019607.png">
             <h3 class="h3footer">SECURE PAYMENT</h3>
             <P class="footerp">100% Secure Payment</P>
         </div>
         <div class="footer">
-            <img src="https://icons-for-free.com/iconfiles/png/512/shipping+truck+icon-1320165997161801796.png" >
+            <img src="https://icons-for-free.com/iconfiles/png/512/shipping+truck+icon-1320165997161801796.png">
             <h3 class="h3footer">FREE SHIPPING</h3>
             <p class="footerp">For Orders Above Rs. 599</p>
         </div>
         <div class="footer">
-            <img src="https://i.pinimg.com/originals/7f/5d/36/7f5d36152b35a4893ba8a5482a93ebee.jpg" >
+            <img src="https://i.pinimg.com/originals/7f/5d/36/7f5d36152b35a4893ba8a5482a93ebee.jpg">
             <h3 class="h3footer">ONLINE NURSERY</h3>
             <p class="footerp">India's 1 Plants Shop</p>
         </div>
         <div id="social">
             <p id="paraimg">SHOW US SOME <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Eo_circle_green_heart.svg/768px-Eo_circle_green_heart.svg.png"> ON SOCIAL MEDIA</p>
-            <img src="https://cdn-icons-png.flaticon.com/512/59/59439.png" >
+            <img src="https://cdn-icons-png.flaticon.com/512/59/59439.png">
             <img src="https://cdn.icon-icons.com/icons2/791/PNG/512/TWITTER_icon-icons.com_65486.png" alt="">
             <img src="https://cdn-icons-png.flaticon.com/512/25/25425.png">
             <img src="https://cdn-icons-png.flaticon.com/512/25/25681.png" alt="">
@@ -897,7 +976,7 @@
         </div>
         <div></div>
     </div>
-     
+
 
     <!-- code for info footer -->
 
@@ -912,12 +991,12 @@
             <p>> Site Map</p>
         </div>
         <div class="policy">
-             <h4>MY ACCOUNT</h4>
-             <hr>
-             <p>> Order History</p>
-             <p>> Wish List (0)</p>
-             <p>> Newsletter</p>
-             <p>> Login</p>
+            <h4>MY ACCOUNT</h4>
+            <hr>
+            <p>> Order History</p>
+            <p>> Wish List (0)</p>
+            <p>> Newsletter</p>
+            <p>> Login</p>
         </div>
         <div class="policy">
             <h4>NEED HELP</h4>
@@ -943,10 +1022,11 @@
 
     <!-- code for last line -->
 
-    
+
     <hr>
     <div id="last">
         <img src="https://www.freepnglogos.com/uploads/copyright/copyright-symbol-nik-nak-old-peculiar-copyright-and-the-hargreves-report-28.png" alt=""> Plants Guru 2014. | www.plantsguru.com</p>
     </div>
 </body>
+
 </html>
